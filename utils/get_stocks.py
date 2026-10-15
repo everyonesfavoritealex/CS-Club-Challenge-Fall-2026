@@ -1,9 +1,9 @@
-from random import choice
 """
 Author: Alex
-Date:10-14-2026
+Date: 10-14-2026
 Description: Contains get_stocks()
 """
+from random import choice
 def get_stocks(num):
     """
     Description: Contains lists of all potential stocks at risk variance levels and returns random ones to be used, if num==3: return one from each category, 

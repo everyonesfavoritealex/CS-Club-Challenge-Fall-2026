@@ -1,3 +1,8 @@
+"""
+Author: Alex
+Date: 10-15-2026
+Description: Gives information on mouse status with rectangles
+"""
 import pygame
 def hovering(mousepos,rect):
     """
