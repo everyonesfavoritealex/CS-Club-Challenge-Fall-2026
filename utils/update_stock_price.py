@@ -11,4 +11,4 @@ def update_stock_price(stock):
 
     Parameters: (list) stock: the stock to be updated
     """
-    stock[2]=stock[2]*(1+uniform(*stock[3]))
+    stock[2] = stock[2] * ( 1 + uniform ( * stock[3] ) )

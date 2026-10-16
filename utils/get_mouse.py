@@ -10,6 +10,6 @@ def hovering(mousepos,rect):
     Parameters: (tuple) mousepos, (pygame.Rect) rect
     Return: True if mouse is within the area of rect, false othewise
     """
-    if rect.x<=mousepos[0]<=(rect.x+rect.width) and rect.y<=mousepos[1]<=(rect.x+rect.height):
+    if rect.x <= mousepos[0] <= ( rect.x + rect.width ) and rect.y <= mousepos[1] <= ( rect.x + rect.height ):
         return True
     return False
