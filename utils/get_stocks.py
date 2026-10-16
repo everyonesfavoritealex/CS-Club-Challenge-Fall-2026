@@ -1,11 +1,12 @@
 """
 Author: Alex
 Editor: Nicole
-Date:10-14-2026
-Description: Contains get_stocks()
+Date: 10-14-2026
+Description: Contains get_stocks() and list of all stocks
 """
-    # low/med/high[a]==[(str) stock name, (str) stock description, (float) stock starting price ($), (tuple)(floats) stock variaton: percentages]
-    # low starting price=100, +variation =.01-.03, -variation=-(+variation/4)
+from random import choice
+# low/med/high[a]==[(str) stock name, (str) stock description, (float) stock starting price ($), (tuple)(floats) stock variaton: percentages]
+# low starting price=100, +variation =.01-.03, -variation=-(+variation/4)
 low = [
         ["Sliced Bread", "As safe and simple as it gets.", 100.00, (-.0025, .01)],
         ["Math", "The laws of math stay consistent.", 100.0, (-.0075, .03)],
@@ -18,7 +19,7 @@ low = [
         ["Pencils", "Pencils will always be used to write things down, and they remain mostly the same.", 100.0, (-.0075, .03)],
         ["The Circle of Life", "The circle of life will continue onwards forever looping", 100.0, (-.0025, .01)]
     ]
-    # low starting price=500, +variation =.06-.15, -variation=-(+variation/2)
+# med starting price=500, +variation =.06-.15, -variation=-(+variation/2)
 med = [
         ["Popular Music", "Tastes evolve over time, but won't change too much too quickly", 500.0,(-.035, .07)],
         ["The Law", "Interpretations may be different, but should follow the framework.", 500.0, (-.055, .11)],
@@ -31,7 +32,7 @@ med = [
         ["Technology", "People are constantly searching for inovations in technology, but they take some time to create", 500.0, (-.0375, .075)],
         ["Pizza", "There are many toppings, but no matter which ones you choose it's still pizza", 500.0, (-.07, .14)]
     ]
-    # low starting price=1000, +variation =.2-.35, -variation=-(+variation)
+# high starting price=1000, +variation =.2-.35, -variation=-(+variation)
 high = [
         ["Movie Musicals", "Either the best or worst thing ever, no inbetween.", 1000.0, (-.2, .2)],
         ["Mutations", "Who knows what'll happen.", 1000.0, (-.35, .35)],
@@ -47,8 +48,8 @@ high = [
 
 def get_stocks(num):
     """
-    Description: Contains lists of all potential stocks at risk variance levels and returns random ones to be used, if num==3: return one from each category, 
-    if num==2: return one from only med and high
+    if num==3: return one stock from each category, 
+    if num==2: return one stock from only med and high
 
     Parameters: (int) num: the number of stocks to return, either 2 or 3
 
