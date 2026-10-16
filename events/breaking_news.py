@@ -23,7 +23,7 @@ breaking_news={
         [],
         [],
         [],
-        []
+        ["Salmonella Outbreak", ()]
     ],
     "Cheerios":[
         [],

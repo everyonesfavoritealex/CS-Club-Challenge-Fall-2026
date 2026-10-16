@@ -8,10 +8,10 @@ Description: Contains all headline events and a function to return one to be use
 #Format: [(str) event description, (tuple) ((float) amount to change negative growth by, (float) amount to change positive growth by)]
 headlines={
     "Sliced Bread":[
-        [],
-        [],
-        [],
-        []
+        ["Endorses Pennut Butter and Jelly", ()],
+        ["", ()],
+        ["Deal Falls Through With European Bread", ()],
+        ["", ()]
     ],
     "Math":[
         [],
@@ -20,16 +20,16 @@ headlines={
         []
     ],
     "Boiled Chicken":[
-        [],
-        [],
-        [],
-        []
+        ["Now Offers Roasted Variety", ()],
+        ["", ()],
+        ["", ()],
+        ["", ()]
     ],
     "Cheerios":[
-        [],
-        [],
-        [],
-        []
+        ["Add Fruit To Cereal", ()],
+        ["", ()],
+        ["", ()],
+        ["", ()]
     ],
     "Library":[
         [],
