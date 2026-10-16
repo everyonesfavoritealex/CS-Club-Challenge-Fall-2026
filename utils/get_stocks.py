@@ -1,4 +1,3 @@
-from random import choice
 """
 Author: Alex
 Editor: Nicole
